@@ -21,7 +21,7 @@ int main(){
         freopen("input.txt", "r", stdin);
         freopen("output.txt", "w", stdout);
     #endif
-    int t;
+    int t, a = 1;
     cin >> t;
 
     while(t--) {
@@ -54,7 +54,7 @@ int main(){
         double accent_paint_qty = accent_walls * ACCENT_PAINT_AMOUNT;
         double regular_paint_qty = regular_walls * REGULAR_PAINT_AMOUNT;
         double total_paint_time = calculate_paint_hours(accent_walls,regular_walls);
-
+        cout << "Case #" << a++ << ": ";
         cout << fixed << setprecision(2) << total_paint_time << "," << accent_paint_qty << "," << regular_paint_qty << "\n";
         
     }
